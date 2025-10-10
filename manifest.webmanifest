@@ -1,0 +1,14 @@
+{
+    "name": "Flood Kingdom",
+    "short_name": "FlKd",
+    "start_url": "/index.html",
+    "display": "fullscreen",
+    "background_color": "#6699dd",
+    "theme_color": "224477",
+    "icons": [
+        {
+            "src": "images/"
+        }
+    ]
+
+}
