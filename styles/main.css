@@ -16,39 +16,77 @@ gf-hazard {
     height: 50px;
 }
 gf-pc {
-    width: 64px;
-    height: 64px;
+    width: 128px;
+    height: 128px;
     background-image: url("/images/charakter/Run.png");
     background-position: 0px 0px;
-    background-size: 400%;
 }
 
 gf-pc.gf-ani {
-    animation-duration: .4s;
-    animation-timing-function: steps(1, jump-start);
+    animation-timing-function: steps(1);
     animation-iteration-count: infinite;
 }
 
-gf-pc.gf-ani.gf-run.gf-angle-90 {
+
+gf-pc.gf-ani.gf-idle {
+    background-size:200%;
+    animation-duration: .5s;
+}
+
+gf-pc.gf-ani.gf-idle.gf-deg-90 {
+    animation-name: kf-pc-idle-90;
+    background-image: url("/images/charakter/Idle.png");
+}
+
+@keyframes kf-pc-idle-90 {
+    0% {background-position: 0px 0px}
+    50% {background-position: -128px 0px}
+    100% {background-position: 0px 0px}
+}
+
+gf-pc.gf-ani.gf-idle.gf-deg-270 {
+    animation-name: kf-pc-idle-270;
+    background-image: url("/images/charakter/Idle-270.png");
+}
+
+@keyframes kf-pc-idle-270 {
+    0% {background-position: 0px 0px}
+    50% {background-position: -128px 0px}
+    100% {background-position: 0px 0px}
+}
+
+gf-pc.gf-ani.gf-run {
+    background-size: 400%;
+    animation-duration: .4s;
+}
+
+gf-pc.gf-ani.gf-run.gf-deg-90 {
     animation-name: kf-pc-run-90;
     background-image: url("/images/charakter/Run.png");
 }
 
 @keyframes kf-pc-run-90 {
-    0% {background-position: 0px 0px}
-    33% {background-position: -64px 0px}
-    66% {background-position: -128px 0px}
-    100% {background-position: -192px 0px}
+    0% {background-position: -128px 0px}
+    25% {background-position: -256px 0px}
+    50% {background-position: -384px 0px}
+    75% {background-position: -512px 0px}
+    100% {background-position: 0px 0px}
 }
 
-gf-pc.gf-ani.gf-run.gf-angle-270 {
+gf-pc.gf-ani.gf-run.gf-deg-270 {
     animation-name: kf-pc-run-270;
     background-image: url("/images/charakter/Run-270.png");
 }
 
 @keyframes kf-pc-run-270 {
-    0% {background-position: -192px 0px}
-    33% {background-position: -128px 0px}
-    66% {background-position: -64px 0px}
-    100% {background-position: 0px 0px}
+    0% {background-position: -384px 0px}
+    25% {background-position: -256px 0px}
+    50% {background-position: -128px 0px}
+    75% {background-position: 0px 0px}
+    100% {background-position: -384px 0px}
+}
+
+gf-pc.gf-ani.gf-run.gf-deg-270 {
+    background-image: url("/images/charakter/Jump.png");
+    background-position: -512px 0px;
 }
