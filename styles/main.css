@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 gf-platform {
     background-color: #669;
 }
@@ -30,7 +34,7 @@ gf-pc.gf-ani {
 
 gf-pc.gf-ani.gf-idle {
     background-size:200%;
-    animation-duration: .5s;
+    animation-duration: 3s;
 }
 
 gf-pc.gf-ani.gf-idle.gf-deg-90 {
@@ -40,7 +44,7 @@ gf-pc.gf-ani.gf-idle.gf-deg-90 {
 
 @keyframes kf-pc-idle-90 {
     0% {background-position: 0px 0px}
-    50% {background-position: -128px 0px}
+    98% {background-position: -128px 0px}
     100% {background-position: 0px 0px}
 }
 
@@ -50,9 +54,9 @@ gf-pc.gf-ani.gf-idle.gf-deg-270 {
 }
 
 @keyframes kf-pc-idle-270 {
-    0% {background-position: 0px 0px}
-    50% {background-position: -128px 0px}
-    100% {background-position: 0px 0px}
+    0% {background-position: -128px 0px}
+    98% {background-position: 0px 0px}
+    100% {background-position: -128px 0px}
 }
 
 gf-pc.gf-ani.gf-run {
@@ -79,14 +83,33 @@ gf-pc.gf-ani.gf-run.gf-deg-270 {
 }
 
 @keyframes kf-pc-run-270 {
-    0% {background-position: -384px 0px}
-    25% {background-position: -256px 0px}
-    50% {background-position: -128px 0px}
-    75% {background-position: 0px 0px}
-    100% {background-position: -384px 0px}
+    0% {background-position: 0px 0px}
+    25% {background-position: -512px 0px}
+    50% {background-position: -384px 0px}
+    75% {background-position: -256px 0px}
+    100% {background-position: -128px 0px}
 }
 
-gf-pc.gf-ani.gf-run.gf-deg-270 {
+gf-pc.gf-ani.gf-jump.gf-deg-90{
+    background-size: 1100%;
     background-image: url("/images/charakter/Jump.png");
     background-position: -512px 0px;
+}
+
+gf-pc.gf-ani.gf-jump.gf-deg-270 {
+    background-size: 1100%;
+    background-image: url("/images/charakter/Jump-270.png");
+    background-position: -896px 0px;
+}
+
+gf-pc.gf-ani.gf-fall.gf-deg-90{
+    background-size: 1100%;
+    background-image: url("/images/charakter/Jump.png");
+    background-position: -512px 0px;
+}
+
+gf-pc.gf-ani.gf-fall.gf-deg-270 {
+    background-size: 1100%;
+    background-image: url("/images/charakter/Jump-270.png");
+    background-position: -896px 0px;
 }
