@@ -4,18 +4,19 @@ import { Game } from "https://games-sdk.lmg-software-ag.de/scripts/sdk-platform.
 
 const game = new Game();
 
-game.placeObstacle(385, 600);
-game.placeObstacle(200, 700);
-game.placeObstacle(700, 300, "type2");
-game.placePlatform(0, 600, 300, 2000);
-game.placePlatform(500, 600, 300, 2000);
-game.placePlatform(1000, 600, 300, 2000);
-game.placePlatform(1500, 600, 300, 2000);
-game.placeHazard(300, 900);
-game.placeHazard(350, 900);
-game.placeHazard(400, 900);
-game.placeHazard(450, 900);
-game.setupPlayerCharacter( 100, 100, 5, 300, {
+game.placeObstacle(50, 900);
+game.placeObstacle(50, 850);
+game.placeObstacle(0, 300, "type2");
+game.placePlatform(0, 1000, 300, 2000);
+game.placePlatform(15, 850, 100, 20);
+game.placePlatform(500, 1000, 300, 2000);
+game.placePlatform(1000, 1000, 300, 2000);
+game.placePlatform(1500, 1000, 300, 2000);
+game.placeHazard(300, 1500);
+game.placeHazard(350, 1500);
+game.placeHazard(400, 1500);
+game.placeHazard(450, 1500);
+game.setupPlayerCharacter( 0, 0, 5, 300, {
    //showHitBoxFrame: true, 
     hitBoxWidth: 35, 
     hitBoxOffsetLeft: 45,
