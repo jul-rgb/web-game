@@ -7,16 +7,23 @@ const game = new Game();
 game.placeObstacle(50, 900);
 game.placeObstacle(50, 850);
 game.placeObstacle(0, 300, "type2");
+game.placeObstacle(1100, 910);
+game.placeObstacle(1100, 650);
+game.placeObstacle(1500, 1000);
+game.placeObstacle(1700, 1000);
+game.placeObstacle(1900, 1000);
+game.placeObstacle(2200, 820);
+game.placeObstacle(2100, 910);
 game.placePlatform(0, 1000, 300, 2000);
 game.placePlatform(15, 850, 100, 20);
 game.placePlatform(500, 1000, 300, 2000);
 game.placePlatform(1000, 1000, 300, 2000);
-game.placePlatform(1500, 1000, 300, 2000);
+game.placePlatform(2000, 1000, 300, 2000);
 game.placeHazard(300, 1500);
 game.placeHazard(350, 1500);
 game.placeHazard(400, 1500);
 game.placeHazard(450, 1500);
-game.setupPlayerCharacter( 0, 0, 5, 300, {
+game.setupPlayerCharacter( 0, -100, 5, 300, {
    //showHitBoxFrame: true, 
     hitBoxWidth: 35, 
     hitBoxOffsetLeft: 45,

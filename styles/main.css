@@ -1,33 +1,16 @@
 body {
     overflow: hidden;
-    /* forest background image */
-    /*background-image: url("/images/charakter/forest background.png");*/
-    background-color: rgb(94, 107, 72);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
-}
-
-/* overlay layer using the secondary forest image
-   Use a real DOM element so it reliably stacks above game content */
-#gf-overlay {
-    position: fixed;
-    inset: 0;
-    pointer-events: none; /* don't block clicks */
-    background-image: url("/images/charakter/forest background1.png");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    mix-blend-mode: overlay;
-    opacity: 0.95;
-    z-index: 2147483647; /* very high to sit above most content */
+    background-image: url("/images/forest background.png");
+    background-color: #170e19;
+    background-repeat: repeat-x;
+    background-position: center -55%;
 }
 
 gf-platform {
-    background-color: rgb(0, 0, 0);
+    background-color: #45237c;
 }
 gf-obstacle {
-    background-color: rgb(90, 82, 73);
+    background-color: #524014;
     width: 30px;
     height: 100px;
 }
