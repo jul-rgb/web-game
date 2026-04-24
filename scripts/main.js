@@ -3,6 +3,7 @@
 import { Game } from "https://games-sdk.lmg-software-ag.de/scripts/sdk-platform.js";
 
 const game = new Game();
+
 //Spawnpunkt
 game.setupPlayerCharacter( 0, -100, 5, 300, {
    //showHitBoxFrame: true, 
@@ -17,14 +18,15 @@ game.placeObstacle(50, 850, "Type2");
 game.placePlatform(15, 850, 100, 20);
 
 //Lücken-Hindernis
+game.placePlatform(1115, 730, 100, 20);
 game.placeObstacle(1100, 910);
 game.placeObstacle(1100, 650);
 game.placePlatform(1000, 1000, 300, 2000);
 
 //Großer Abstand
-game.placeObstacle(1500, 1000);
-game.placeObstacle(1700, 1000);
-game.placeObstacle(1900, 1000);
+game.placePlatform(1400, 1000, 100, 20);
+game.placePlatform(1600, 1000, 100, 20);
+game.placePlatform(1800, 1000, 100, 20);
 
 //Weg nach oben
 game.placeObstacle(2100, 910);
@@ -50,7 +52,7 @@ game.placeHazard(400, 1500);
 game.placeHazard(450, 1500);
 
 //Gefahren-Feld
-game.placeObstacle(2350, 900);
+game.placeObstacle(2350, 930);
 game.placeObstacle(2500, 950);
 game.placeObstacle(2650, 875);
 game.placeObstacle(2650, 900);
@@ -74,7 +76,16 @@ game.placeHazard(2850, 1000);
 game.placeHazard(2900, 1000);
 game.placeHazard(2950, 1000);
 
-
+//Oben
+game.placeObstacle(1600, 600, 100, 20);
+game.placeObstacle(1400, 550, 100, 20);
+game.placeCollectible(1300, 500);
+game.placeObstacle(1200, 650, 100, 20);
+game.placeObstacle(1000, 570, "type2");
+game.placeObstacle(800, 500, "type2");
+game.placeObstacle(700, 420, "type2");
+game.placeObstacle(600, 350, "type2");
+game.placeObstacle(850, 275, "type2");
 
 window.addEventListener("playerDestroyed", (event) => {
     alert("                         Game Over                                                                                                                                                    Gefahr berührt");
