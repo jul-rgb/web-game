@@ -1,3 +1,20 @@
+html, body {
+  overflow: hidden;
+}
+#move-left, #move-right, #jump {
+  touch-action: none;
+}
+button {
+  user-select: none;
+  -webkit-user-select: none;
+}
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  -webkit-appearance: none;
+  appearance: none;
+}
 body {
     overflow: hidden;
     background-image: url("../images/forest background.png");
