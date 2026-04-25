@@ -74,7 +74,7 @@ gf-pc.gf-ani.gf-idle {
 
 gf-pc.gf-ani.gf-idle.gf-deg-90 {
     animation-name: kf-pc-idle-90;
-    background-image: url("images/charakter/Idle.png");
+    background-image: url("../images/charakter/Idle.png");
 }
 
 @keyframes kf-pc-idle-90 {
