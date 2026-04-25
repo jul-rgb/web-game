@@ -57,7 +57,7 @@ gf-hazard {
 gf-pc {
     width: 128px;
     height: 128px;
-    background-image: url("images/charakter/Run.png");
+    background-image: url("../images/charakter/Run.png");
     background-position: 0px 0px;
 }
 
