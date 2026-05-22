@@ -13,7 +13,6 @@ game.setupPlayerCharacter( 0, -100, 5, 300, {
     hitBoxOffsetTop: 15,
 });
 //Pilz-Plattform
-game.placeCollectible(50, 800)
 game.placeObstacle(50, 900, "Type2");
 game.placeObstacle(50, 850, "Type2");
 game.placePlatform(15, 850, 100, 20);
@@ -61,6 +60,7 @@ game.placeObstacle(2800, 950, "type2");
 game.placePlatform(2780, 950, 50, 10);
 game.placeObstacle(2900, 800, "type2");
 game.placePlatform(2880, 800, 50, 10);
+game.placeCollectible(2880, 750)
 //Gefahren-Boden
 game.placeHazard(2300, 1000);
 game.placeHazard(2350, 1000);
@@ -76,7 +76,11 @@ game.placeHazard(2800, 1000);
 game.placeHazard(2850, 1000);
 game.placeHazard(2900, 1000);
 game.placeHazard(2950, 1000);
-
+// Weg nach Gefahren-Feld
+game.placePlatform(3000, 800, 300, 10);
+game.placePlatform(3430, 800, 300, 10);
+game.placeObstacle(3300, 810);
+game.placeObstacle(3400, 810);
 //Oben
 game.placeObstacle(1600, 600, 100, 20);
 game.placeObstacle(1400, 550, 100, 20);
@@ -87,6 +91,7 @@ game.placeObstacle(800, 500, "type2");
 game.placeObstacle(700, 420, "type2");
 game.placeObstacle(600, 350, "type2");
 game.placeObstacle(850, 275, "type2");
+game.placeObstacle(1000, 200, "type2");
 
 window.addEventListener("playerDestroyed", (event) => {
     alert("                         Game Over                                                                                                                                                    Gefahr berührt");
