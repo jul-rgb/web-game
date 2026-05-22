@@ -31,7 +31,7 @@ game.placePlatform(1800, 1000, 100, 20);
 //Weg nach oben
 game.placeObstacle(2100, 910);
 game.placeObstacle(2200, 820);
-game.placePlatform(2300, 730, 100, 20);
+game.placePlatform(2300, 700, 100, 20);
 game.placePlatform(2460, 800, 100, 20);
 game.placeObstacle(2100, 640);
 game.placePlatform(1800, 640, 100, 20);
@@ -60,7 +60,7 @@ game.placeObstacle(2800, 950, "type2");
 game.placePlatform(2780, 950, 50, 10);
 game.placeObstacle(2900, 800, "type2");
 game.placePlatform(2880, 800, 50, 10);
-game.placeCollectible(2880, 750)
+game.placeCollectible(2880, 750);
 //Gefahren-Boden
 game.placeHazard(2300, 1000);
 game.placeHazard(2350, 1000);
