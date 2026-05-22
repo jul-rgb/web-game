@@ -13,6 +13,7 @@ game.setupPlayerCharacter( 0, -100, 5, 300, {
     hitBoxOffsetTop: 15,
 });
 //Pilz-Plattform
+game.placeCollectible(50, 800)
 game.placeObstacle(50, 900, "Type2");
 game.placeObstacle(50, 850, "Type2");
 game.placePlatform(15, 850, 100, 20);
