@@ -1,5 +1,7 @@
 
 body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
     background-image: url("../images/forest background.png");
     background-color: #170e19;
@@ -8,6 +10,8 @@ body {
     user-select: none;
     -webkit-user-scelect: none;
 }
+    
+
 gf-ctl-move-left {
 
     bottom: 50px;
