@@ -1,8 +1,20 @@
 "use strict";
 
+import { GameResourceType } from "https://games-sdk.lmg-software-ag.de/scripts/objects.js";
 import { Game } from "https://games-sdk.lmg-software-ag.de/scripts/sdk-platform.js";
 
 const game = new Game();
+const collectibles = {
+
+    maske: false,
+    blume: false,
+    splitter: false,
+    feder: false,
+    glocke: false,
+    kokon: false,
+    siegel: false
+
+};
 
 //Spawnpunkt
 game.setupPlayerCharacter( 0, -100, 5, 300, {
@@ -12,6 +24,32 @@ game.setupPlayerCharacter( 0, -100, 5, 300, {
     hitBoxHeight: 110,
     hitBoxOffsetTop: 15,
 });
+const menu = document.getElementById("menu");
+
+document.getElementById("openMenu").onclick = () =>{
+
+    menu.style.display = "flex";
+
+}
+
+document.getElementById("close").onclick = () =>{
+
+    menu.style.display = "none";
+
+}
+
+// ESC zum Schließen
+
+document.addEventListener("keydown",(e)=>{
+
+    if(e.key=="Escape"){
+
+        menu.style.display="none";
+
+    }
+
+});
+
 //Pilz-Plattform
 game.placeObstacle(50, 900, "Type2");
 game.placeObstacle(50, 850, "Type2");
@@ -84,7 +122,7 @@ game.placeObstacle(3400, 810);
 //Oben
 game.placeObstacle(1600, 600, 100, 20);
 game.placeObstacle(1400, 550, 100, 20);
-game.placeCollectible(1300, 500);
+game.placeCollectible(500, 900, null,{value: "test", subType: GameResourceType.treasure } );
 game.placeObstacle(1200, 650, 100, 20);
 game.placeObstacle(1000, 570, "type2");
 game.placeObstacle(800, 500, "type2");
@@ -98,6 +136,9 @@ window.addEventListener("playerDestroyed", (event) => {
     alert("Weiche Gefahren aus")
     game.stop();
     window.location.reload();
+});
+window.addEventListener("playerCollectedTreasure", (event)=> {
+   alert( event.detail.treasureType);
 });
 
 window.addEventListener("playerFallenToDeath", (event) => {
