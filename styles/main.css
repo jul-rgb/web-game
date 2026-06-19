@@ -11,7 +11,9 @@ body {
     -webkit-user-scelect: none;
 }
     
-
+a img{
+    width: 50px;
+}
 gf-ctl-move-left {
 
     bottom: 50px;
